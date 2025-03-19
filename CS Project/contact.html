@@ -33,17 +33,17 @@
     </nav>
 
     <div class="contact_container">
-        <form action="" class="contact_left">
+        <form action="contactsubmissions.php" method="post" class="contact_left">
             <div class="contact_left_title">
                 <h1>Contact Us</h1>
                 <hr>
             </div>
-                Your Name : 
-                <input type="text" name="name" placeholder="Your Name" class="contact_input" required><br>
-                Your Email : 
-                <input type="text" name="email" placeholder="Your Email" class="contact_input" required><br>
-                Your Precious Message : 
-                <textarea name="message" placeholder="Your message" class="contact_input"></textarea><br>
+                <label for="yourname">Your Name : </label> 
+                <input type="text" name="name" id="yourname" placeholder="Your Name" class="contact_input" required><br>
+                <label for="youremail">Your Email : </label> 
+                <input type="text" name="email" id="youremail" placeholder="Your Email" class="contact_input" required><br>
+                <label for="yourmessage">Your Precious Message : </label>
+                <textarea name="message" id="yourmessage" placeholder="Your message" class="contact_input"></textarea><br>
                 <button type="submit">Submit</button>
         </form>
     </div>
